@@ -1,0 +1,4 @@
+codeship_example:
+  build:
+    image: dazz111/ubuntu-sdk:build
+    dockerfile: Dockerfile
