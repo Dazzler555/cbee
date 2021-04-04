@@ -1,0 +1,8 @@
+FROM dazz111/ubuntu-sdk:build
+
+RUN mkdir /tmp 
+WORKDIR /tmp
+
+COPY . .
+
+CMD ["/bin/bash"]
